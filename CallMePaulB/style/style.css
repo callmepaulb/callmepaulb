@@ -1,0 +1,66 @@
+body{
+    padding-top: 0px;
+    margin: 0;
+}
+
+header {
+    background:linear-gradient(to right, rgba(105,139,228,0.73) 0%,rgba(105,139,228,0.73) 1%,rgba(58,57,103,0.86) 100%);
+    height: 35px;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%
+}
+.brandimg {
+    height: 25px;
+    margin-top: 10px;
+}
+.navbar-default {
+    background: linear-gradient(135deg, rgba(120,168,254,0.78) 0%,rgba(55,56,104,0.95) 100%);
+    border-color: none;
+    border: none;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #FFFEF8;
+    font-family: 'Sarina', cursive;
+    padding-bottom: 0px;
+    padding-top: 30px;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #E1C9E6;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color:#FFFEF8;
+}
+.navbar-default .navbar-toggle {
+    border-color: #FFFEF8;
+}
+.navbar-default .navbar-toggle:hover{
+    border-color: #FFFEF8;
+    background-color: none;
+}
+.bgimage1 {
+  background-image: url('/images/Paris.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 700px;
+}
+.bgimage2 {
+  background-image: url('/images/Me.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 715px;
+}
+.bgimage3 {
+  background-image: url('/images/bridge.jpg');
+  background-position: left center;
+  background-size: cover;
+  height: 700px;
+}
+
+#container {
+    padding-top:0px;
+	margin:0px;
+	padding-left:0px;
+	padding-bottom:0px;
+}
