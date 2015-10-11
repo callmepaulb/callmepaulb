@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style/style.css">
   <title>CallMePaulB</title>
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top gradient">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" 
@@ -28,11 +28,11 @@
         
         <div class="collapse navbar-collapse" id="collapsemenu">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Path</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about" class="scroll">About</a></li>
+                <li><a href="#path" class="scroll">Path</a></li>
+                <li><a href="#skills" class="scroll">Skills</a></li>
+                <li><a href="#achievements" class="scroll">Achievements</a></li>
+                <li><a href="#contact" class="scroll">Contact</a></li>
             </ul>
         </div>
     </div>
@@ -40,20 +40,58 @@
     
 <div class="bgimage1">
   <div class="container">
+      <a id="about"></a>
   </div>
+</div>
+    
+<div class="empty1">
+    <div class="container">
+        <a id="path"></a>
+    </div>
 </div>
 
 <div class="bgimage2">
   <div class="container">
+      <a id="skills"></a>
   </div>
-</div> 
+</div>
+    
+<div class="empty2">
+    <div class="container">
+        <a id="achievements"></a>
+    </div>
+</div>
     
 <div class="bgimage3">
   <div class="container">
+      <a id="contact"></a>
   </div>
 </div> 
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="/src/jquery.bootstrap-autohidingnavbar.js"></script>
+<script>
+//$("div.navbar-fixed-top").autoHidingNavbar();
+$(".gradient").mousemove(function( event ) {
+  var w = $(this).width(),
+      pct = 360*(+event.pageX)/w,
+      bg = "linear-gradient(" + pct + "deg, rgba(120,168,254,0.85) 0%,rgba(55,56,104,0.95) 100%)";
+      $(".gradient").css("background-image", bg);
+});
+$(".scroll").click(function(event){
+         event.preventDefault();
+         //calculate destination place
+         var dest=0;
+         if($(this.hash).offset().top > $(document).height()-$(window).height()){
+              dest=$(document).height()-$(window).height();
+         }else{
+              dest=$(this.hash).offset().top;
+         }
+         //go to destination
+         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+     });
+</script>
+
 </body>
 </html>

@@ -13,10 +13,9 @@ header {
 }
 .brandimg {
     height: 25px;
-    margin-top: 10px;
 }
 .navbar-default {
-    background: linear-gradient(135deg, rgba(120,168,254,0.78) 0%,rgba(55,56,104,0.95) 100%);
+    background: linear-gradient(135deg, rgba(55,56,104,0.95) 0%,rgba(120,168,254,0.85) 100%);;
     border-color: none;
     border: none;
 }
@@ -24,7 +23,7 @@ header {
     color: #FFFEF8;
     font-family: 'Sarina', cursive;
     padding-bottom: 0px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: #E1C9E6;
@@ -40,10 +39,18 @@ header {
     background-color: none;
 }
 .bgimage1 {
-  background-image: url('/images/Paris.jpg');
+  background-image: url('/images/Paris_Night.jpg');
   background-position: center center;
   background-size: cover;
   height: 700px;
+}
+.empty1 {
+    height: 715px;
+    background-color: #d8d6d6;
+}
+.empty2 {
+    height: 715px;
+    background-color: #d8d6d6;
 }
 .bgimage2 {
   background-image: url('/images/Me.jpg');
@@ -53,7 +60,7 @@ header {
 }
 .bgimage3 {
   background-image: url('/images/bridge.jpg');
-  background-position: left center;
+  background-position: left top;
   background-size: cover;
   height: 700px;
 }
