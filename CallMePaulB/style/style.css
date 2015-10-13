@@ -45,6 +45,9 @@
     .navbar-brand{
         font-size: 25px !important;
     }
+    p {
+        font-size: 16px !important;
+    }
 }
 header{
     background-size: cover;
@@ -60,7 +63,17 @@ h1 {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
     text-align: center;
 }
-
+h2 {
+    font-family: 'Sarina', cursive;
+    color: #FFFEF8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+p {
+    font-family: 'Nunito', sans-serif;
+    color: #FFFEF8;
+    font-size: 25px;
+    padding-top: 25px;
+}
 .brandimg {
     height: 25px;
 }
@@ -72,6 +85,7 @@ h1 {
     padding-bottom: 0px;
     padding-top: 20px;
     font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 .navbar-default .navbar-brand, .navbar-default .navbar-brand:focus{
     color: #FFFEF8;
@@ -138,6 +152,9 @@ h1 {
 .btn:hover{
     color: #FFFEF8;
 }
+section {
+    padding: 110px 0;
+}
 .bgimage1 {
   background-image: url('../images/Paris_Night.jpg');
   background-position: center center;
@@ -169,11 +186,4 @@ h1 {
   background-position: left top;
   background-size: cover;
   height: 700px;
-}
-
-#container {
-    padding-top:0px;
-	margin:0px;
-	padding-left:0px;
-	padding-bottom:0px;
 }
