@@ -1,23 +1,57 @@
+@media (max-width: 325px){
+    .navbar-brand{
+        max-width: 60%;
+    }
+    .navbar-brand>img{
+        max-width: 100%;
+    }
+}
+@media (max-height: 700px){
+    div #home{
+        height: 100%;
+    }
+}
+@media (min-width: 768px){
+    header .intro-text .intro-lead-in {
+        font-size: 40px;
+        color: #FFFEF8;
+        font-family: 'Sarina', cursive;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        text-align: center
+    }
+}
+@media (max-width: 768px){
+    header .intro-text .intro-lead-in {
+        font-size: 25px;
+        color: #FFFEF8;
+        font-family: 'Sarina', cursive;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+        text-align: center
+    }
+    .logo{
+        height: 400px !important;
+    }
+}
+header{
+    background-size: cover;
+}
 body{
     padding-top: 0px;
     margin: 0;
+    position: relative;
+}
+h1 {
+    color: #FFFEF8;
+    font-family: 'Sarina', cursive;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    text-align: center;
 }
 
-header {
-    background:linear-gradient(to right, rgba(105,139,228,0.73) 0%,rgba(105,139,228,0.73) 1%,rgba(58,57,103,0.86) 100%);
-    height: 35px;
-    position: fixed;
-    top: 0;
-    transition: top 0.2s ease-in-out;
-    width: 100%
-}
 .brandimg {
     height: 25px;
 }
 .navbar-default {
-    background: linear-gradient(135deg, rgba(55,56,104,0.95) 0%,rgba(120,168,254,0.85) 100%);;
-    border-color: none;
-    border: none;
+    background: linear-gradient(135deg, rgba(55,56,104,0.95) 0%,rgba(120,168,254,0.85) 100%);; 
 }
 .navbar-default .navbar-nav>li>a {
     color: #FFFEF8;
@@ -25,7 +59,7 @@ header {
     padding-bottom: 0px;
     padding-top: 20px;
 }
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+.navbar-default .navbar-nav > li > a:hover{
     color: #E1C9E6;
 }
 .navbar-default .navbar-toggle .icon-bar {
@@ -36,13 +70,56 @@ header {
 }
 .navbar-default .navbar-toggle:hover{
     border-color: #FFFEF8;
-    background-color: none;
+    background-color: #E1C9E6;
+}
+.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+.navbar-default .navbar-toggle:active {
+    background-color: #E1C9E6;
+}
+.navbar-default .navbar-nav>.active>a{
+    background-color: transparent;
+    color: #E1C9E6;
+}
+.navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    color: #E1C9E6;
+}
+.navbar-default .navbar-nav>.active>a:focus{
+    background-color: transparent;
+    color: #E1C9E6;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #FFFEF8;
+}
+.hvr-float:focus{
+    transform: translateY(0px);
+}
+.hvr-float:hover, .hvr-float:active{
+    transform: translateY(-4px);
+}
+.btn {
+    color: #FFFEF8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+.btn:focus {
+    color: #FFFEF8;
+}
+.btn:hover{
+    color: #FFFEF8;
 }
 .bgimage1 {
-  background-image: url('/images/Paris_Night.jpg');
+  background-image: url('../images/Paris_Night.jpg');
   background-position: center center;
   background-size: cover;
   height: 700px;
+}
+.logo {
+    padding-top: 120px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
 }
 .empty1 {
     height: 715px;
@@ -53,13 +130,13 @@ header {
     background-color: #d8d6d6;
 }
 .bgimage2 {
-  background-image: url('/images/Me.jpg');
+  background-image: url('../images/Me.jpg');
   background-position: center center;
   background-size: cover;
   height: 715px;
 }
 .bgimage3 {
-  background-image: url('/images/bridge.jpg');
+  background-image: url('../images/bridge.jpg');
   background-position: left top;
   background-size: cover;
   height: 700px;

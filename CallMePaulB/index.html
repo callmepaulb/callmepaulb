@@ -5,11 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href='https://fonts.googleapis.com/css?family=Sarina' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/hover-min.css">
   <link rel="stylesheet" href="style/style.css">
   <title>CallMePaulB</title>
 </head>
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top">
 
 <nav class="navbar navbar-default navbar-fixed-top gradient">
     <div class="container">
@@ -21,53 +23,63 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="#" class="navbar-brand">
-                <img class="brandimg" src="images/callmepaulb3.png" />
+            <a href="#home" class="navbar-brand scroll">
+                <img class="brandimg img-responsive" src="images/callmepaulb3.png" />
             </a>
         </div>
         
         <div class="collapse navbar-collapse" id="collapsemenu">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#about" class="scroll">About</a></li>
-                <li><a href="#path" class="scroll">Path</a></li>
-                <li><a href="#skills" class="scroll">Skills</a></li>
-                <li><a href="#achievements" class="scroll">Achievements</a></li>
-                <li><a href="#contact" class="scroll">Contact</a></li>
+                <li><a href="#about" class="scroll hvr-float">Objective</a></li>
+                <li><a href="#path" class="scroll hvr-float">About</a></li>
+                <li><a href="#skills" class="scroll hvr-float">Skills</a></li>
+                <li><a href="#achievements" class="scroll hvr-float">Achievements</a></li>
+                <li><a href="#contact" class="scroll hvr-float">Contact</a></li>
             </ul>
         </div>
     </div>
 </nav>
-    
-<div class="bgimage1">
-  <div class="container">
-      <a id="about"></a>
-  </div>
-</div>
-    
-<div class="empty1">
+<header id="home" class="bgimage1">
+        <div class="container">
+            <div class="intro-text">
+                <a id="home"></a>
+                <img class="logo img-responsive center-block" src="images/boxlogo2.png" />
+                <div class="intro-lead-in">Creative Developer and Programmer</div>
+                <a href="#about" class="btn scroll center-block">
+                    <i class="fa fa-angle-double-down animated fa-4x hvr-pulse"></i>
+                </a>
+            </div>
+        </div>
+</header>    
+<section id="about" class="empty1">
     <div class="container">
-        <a id="path"></a>
+        <a id="about"></a>
     </div>
-</div>
+</section>
 
-<div class="bgimage2">
+<section id="path" class="bgimage2">
   <div class="container">
-      <a id="skills"></a>
+      <a id="path"></a>
   </div>
-</div>
+</section>
     
-<div class="empty2">
+<section id="skills" class="empty2">
     <div class="container">
-        <a id="achievements"></a>
+        <a id="skills"></a>
     </div>
-</div>
+</section>
     
-<div class="bgimage3">
+<section id="achievements" class="bgimage3">
   <div class="container">
-      <a id="contact"></a>
+      <a id="achievements"></a>
   </div>
-</div> 
-    
+</section> 
+
+<section id="contact" class="empty2">
+    <div class="container">
+        <a id="contact"></a>
+    </div>
+</section>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/src/jquery.bootstrap-autohidingnavbar.js"></script>
