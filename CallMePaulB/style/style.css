@@ -6,6 +6,20 @@
         max-width: 100%;
     }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+    .navbar-collapse.collapse.in {
+        display: block !important;
+    }
+    .navbar-header .collapse, .navbar-toggle {
+        display:block !important;
+    }
+    .navbar-header {
+        float:none;
+    }
+}
 @media (max-height: 700px){
     div #home{
         height: 100%;
@@ -28,8 +42,8 @@
         text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
         text-align: center
     }
-    .logo{
-        height: 400px !important;
+    .navbar-brand{
+        font-size: 25px !important;
     }
 }
 header{
@@ -53,6 +67,18 @@ h1 {
 .navbar-default {
     background: linear-gradient(135deg, rgba(55,56,104,0.95) 0%,rgba(120,168,254,0.85) 100%);; 
 }
+.navbar-brand{
+    font-family: 'Sarina', cursive;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    font-size: 30px;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:focus{
+    color: #FFFEF8;
+}
+.navbar-default .navbar-brand:hover{
+    color: #E1C9E6
+}
 .navbar-default .navbar-nav>li>a {
     color: #FFFEF8;
     font-family: 'Sarina', cursive;
@@ -65,18 +91,21 @@ h1 {
 .navbar-default .navbar-toggle .icon-bar {
     background-color:#FFFEF8;
 }
+.navbar-default .navbar-toggle .icon-bar:hover {
+    background-color:#E1C9E6;
+}
 .navbar-default .navbar-toggle {
     border-color: #FFFEF8;
 }
 .navbar-default .navbar-toggle:hover{
     border-color: #FFFEF8;
-    background-color: #E1C9E6;
+    background-color: #373868;
 }
 .navbar-default .navbar-toggle:focus {
     background-color: transparent;
 }
 .navbar-default .navbar-toggle:active {
-    background-color: #E1C9E6;
+    background-color: #373868;
 }
 .navbar-default .navbar-nav>.active>a{
     background-color: transparent;
