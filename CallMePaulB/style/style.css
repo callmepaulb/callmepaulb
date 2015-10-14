@@ -127,12 +127,6 @@ p>a:hover, p>a:focus, p>a {
 section {
     padding: 110px 0;
 }
-.bgimage1 {
-  background-image: url('../images/Paris_Full.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 705px;
-}
 .logo {
     padding-top: 80px;
     height: 525px;
@@ -146,6 +140,12 @@ section {
 .empty2 {
     height: 715px;
     background-color: #d8d6d6;
+}
+.bgimage1 {
+  background-image: url('../images/Paris_Full.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 705px;
 }
 .bgimage2 {
     background-image: url('../images/Me.jpg');
