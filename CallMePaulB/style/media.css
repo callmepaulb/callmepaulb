@@ -1,7 +1,13 @@
-@media (max-width: 1199px)
+@media (max-width: 1199px) and (min-width: 992px)
 {
     #objective{
         padding: 85px 0 !important;
+    }
+    .logo {
+        padding-top: 100px !important;
+    }
+    #about {
+        padding-top: 75px !important;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
