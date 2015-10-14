@@ -6,6 +6,12 @@
         max-width: 100%;
     }
 }
+@media (max-width: 1199px)
+{
+    #objective{
+        padding: 85px 0 !important;
+    }
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .navbar-collapse.collapse {
         display: none !important;
@@ -19,12 +25,14 @@
     .navbar-header {
         float:none;
     }
-}
-@media (max-height: 700px){
-    div #home{
-        height: 100%;
+    p {
+        font-size: 16px !important;
+    }
+    h3 {
+        font-size: 70px !important;  
     }
 }
+
 @media (min-width: 768px){
     header .intro-text .intro-lead-in {
         font-size: 40px;
@@ -46,7 +54,33 @@
         font-size: 25px !important;
     }
     p {
-        font-size: 16px !important;
+        font-size: 14px !important;
+    }
+    h3 {
+        font-size: 70px !important;  
+    }
+}
+@media (max-width: 363px){
+    p {
+        font-size: 12px !important;
+    }
+    section {
+        padding: 55px 0 !important;
+    }
+}
+@media (max-width: 626px){
+    h3 {
+        font-size: 60px !important;
+    }
+}
+@media (max-width: 530px){
+    h3 {
+        font-size: 55px !important;
+    }
+}
+@media (max-width: 451px){
+    h3 {
+        font-size: 50px !important;
     }
 }
 header{
@@ -68,11 +102,33 @@ h2 {
     color: #FFFEF8;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
+h3 {
+    font-family: 'Nunito', sans-serif;
+    color: #78A8FE;
+    font-size: 90px;
+    padding-top: 20px;
+    text-outline: 2px 2px #ff0000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
 p {
     font-family: 'Nunito', sans-serif;
     color: #FFFEF8;
-    font-size: 25px;
-    padding-top: 25px;
+    font-size: 18px;
+    padding-top: 20px;
+    text-shadow: #000 0px 0px 1px;
+}
+font {
+    font-family: 'Nunito', sans-serif;
+    color: #FFFEF8;
+    font-size: 20px;
+    padding-top: 20px;
+    text-shadow: #000 0px 0px 1px;
+}
+
+p>a:hover, p>a:focus, p>a {
+    color: #E1C9E6;
+    text-shadow: #000 0px 0px 1px;
+    text-decoration: none;
 }
 .brandimg {
     height: 25px;
@@ -91,7 +147,7 @@ p {
     color: #FFFEF8;
 }
 .navbar-default .navbar-brand:hover{
-    color: #E1C9E6
+    color: #E1C9E6;
 }
 .navbar-default .navbar-nav>li>a {
     color: #FFFEF8;
@@ -159,7 +215,7 @@ section {
   background-image: url('../images/Paris_Night.jpg');
   background-position: center center;
   background-size: cover;
-  height: 700px;
+  height: 705px;
 }
 .logo {
     padding-top: 120px;
@@ -176,14 +232,20 @@ section {
     background-color: #d8d6d6;
 }
 .bgimage2 {
-  background-image: url('../images/Me.jpg');
-  background-position: center center;
-  background-size: cover;
-  height: 715px;
+    background-image: url('../images/Me.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 715px;
 }
 .bgimage3 {
-  background-image: url('../images/bridge.jpg');
-  background-position: left top;
-  background-size: cover;
-  height: 700px;
+    background-image: url('../images/bridge.jpg');
+    background-position: left top;
+    background-size: cover;
+    height: 705px;
+}
+.bgimage4 {
+    background-image: url('../images/ecole_42_cluster.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 705px;
 }
