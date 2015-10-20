@@ -1,5 +1,10 @@
 header{
     background-size: cover;
+    color: #FFFEF8;
+    font-family: 'Sarina', cursive;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    text-align: center;
+    font-size: 45px;
 }
 body{
     padding-top: 0px;
@@ -20,11 +25,40 @@ h2 {
 h3 {
     font-family: 'Nunito', sans-serif;
     color: #78A8FE;
-    font-size: 90px;
+    font-size: 60px;
     padding-top: 0px;
     margin-top: 0px;
     text-outline: 2px 2px #ff0000;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+h4 {
+    font-family: 'Nunito', sans-serif;
+    color: #78A8FE;
+    font-size: 50px;
+    margin: 10px;
+    text-outline: 2px 2px #ff0000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    text-align: center;
+    
+}
+h5 {
+    display: none;
+    font-family: 'Nunito', sans-serif;
+    color: #FFFEF8;
+    font-size: 20px;
+    text-outline: 2px 2px #ff0000;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+    text-align: right;
+    
+}
+.skype:hover + h5 {
+    display: block;
+}
+.facebook:hover + h5 {
+    display: block;
+}
+.email:hover + h5 {
+    display: block;
 }
 p {
     font-family: 'Nunito', sans-serif;
@@ -32,6 +66,7 @@ p {
     font-size: 18px;
     padding-top: 20px;
     text-shadow: #000 0px 0px 1px;
+    text-align: justify;
 }
 font {
     font-family: 'Nunito', sans-serif;
@@ -125,7 +160,7 @@ p>a:hover, p>a:focus, p>a {
     color: #FFFEF8;
 }
 section {
-    padding: 110px 0;
+    padding: 35px 0;
 }
 .logo {
     padding-top: 80px;
@@ -164,4 +199,59 @@ section {
     background-position: center center;
     background-size: cover;
     height: 705px;
+}
+.bgimage5 {
+    background-image: url('../images/skills.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 705px;
+}
+#myob {
+    background-color: rgba(216, 214, 214, 0.7);
+    border-radius: 25px;
+}
+#about {
+    padding-top: 50px;
+}
+#objective {
+    padding-top: 55px;
+}
+#skills {
+    padding-top: 55px;
+}
+#myskills {
+    border-radius: 25px;
+}
+.one {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 98%, rgba(216, 214, 214, 0.4) 40%);
+}
+.two {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 98%, rgba(216, 214, 214, 0.4) 40%);
+}
+.three {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 85%, rgba(216, 214, 214, 0.4) 40%);
+}
+.four {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 65%, rgba(216, 214, 214, 0.4) 40%);
+}
+.five {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 90%, rgba(216, 214, 214, 0.4) 40%);
+}
+.six {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.7) 85%, rgba(216, 214, 214, 0.4) 40%);
+}
+.skillcont {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.get {
+	display:none;
+}
+.filler {
+    padding: 50px 0;
+}
+#diagram {
+	float:left;
+	width:600px;
+	height:600px;
 }
